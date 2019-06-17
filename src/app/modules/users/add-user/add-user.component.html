@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body card-form-padding">
+        <!-- Step 1 Admin-Agencies Add New start -->
+        <div class="card-form-wrapper">
+          <div class="page-header">
+            <h1 class="text-header">Add New User</h1>
+          </div>
+          <form [formGroup]="userForm" (ngSubmit)=" saveUserDetails()">
+            <div class="row add-form-padding">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="form-label">First Name</label>
+                  <input type="text" class="form-control rectangle-box-input" formControlName="firstname"
+                    placeholder="Enter first Name">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="form-label">Last Name</label>
+                  <input type="text" class="form-control rectangle-box-input" formControlName="lastname"
+                    placeholder="Enter last Name">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="form-label">Username</label>
+                  <input type="text" class="form-control rectangle-box-input" formControlName="username"
+                    placeholder="Enter username">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="form-label">City</label>
+                  <input type="text" class="form-control rectangle-box-input" formControlName="city"
+                    placeholder="Enter city">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="form-label">Department</label>
+                  <input type="text" class="form-control rectangle-box-input" formControlName="department"
+                    placeholder="Enter department">
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary rectangleButton text-white"
+                [disabled]="!userForm.valid">Save</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

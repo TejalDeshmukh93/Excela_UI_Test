@@ -1,0 +1,39 @@
+.rectangle-box-input {
+  height: 50px !important;
+  width: 100% !important;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.rectangle-box-input::placeholder {
+  color: #C0C0C0 !important;
+}
+
+
+.rectangleButton {
+  height: 60px;
+  width: 412px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 #B8B8B8;
+  margin-top: 40px;
+
+}
+
+.form-actions {
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.text-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ce2664;
+}
+
+.add-form-padding {
+  padding-top: 3%;
+
+}
